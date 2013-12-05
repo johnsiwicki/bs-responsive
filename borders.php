@@ -21,42 +21,54 @@
     <link rel="stylesheet" type="text/css" href="/inc/mobile.css" />
       <link rel="stylesheet" type="text/css" href="/inc/screen.css" />
 
+      <!-- FOR IE 8 to read media queries -->
+    <script src="/core/js/responsive/respond.min.js"></script>
+    <script src="/inc/modernizr.js"></script>
+    
 </head>
 
 
   <body>
 
 
- <div class="off-canvas-wrap">
-  <div class="inner-wrap">
-    <nav class="tab-bar show-for-small-only">
-      <section class="left-small">
-        <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
-      </section>
-
-      <section class="middle tab-bar-section">
-        <h1 class="title"></h1>
-      </section>
-
  
-    </nav>
-
-    <aside class="left-off-canvas-menu">
-      <ul class="off-canvas-list">
-        <li><label>Our Services</label></li>
-        <li><a href="/basement-waterproofing.html">Wet Basements</a></li>
-        <li><a href="#">Crawl Space Repair</a></li>
-        <li><a href="#">Foundation Repair</a></li>
-        <li><a href="#">Basement Finishing</a></li>
-
-         <li><label>About [company]</label></li>
-          <li><a href="#">Reviews</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Service Area</a></li>
-        ...
-      </ul>
-    </aside>
-
+ <div class="fixed">
+ 
+<nav class="top-bar show-for-small-only" data-topbar>
+  <ul class="title-area">
+    <!-- Title Area -->
+    <li class="name"></li>
+    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+  </ul>
+<section class="top-bar-section">
+    <ul class="left">
+     
+      <li class="divider"></li>
+    </ul>
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="divider"></li>
+      <li><a href="/">Home</a></li>
+       <li class="divider"></li>
+      <li><a href="/basement-waterproofing.html">Basement Waterproofing</a></li>
+       <li class="divider"></li>
+      <li><a href="/basement-finishing.html">Basement Finishing</a></li>
+       <li class="divider"></li>
+      <li><a href="/crawl-space-repair.html">Crawl Space Repair</a></li>
+       <li class="divider"></li>
+      <li><a href="/foundation-repair.html">Foundation Repair</a></li>
+            <li class="divider"></li>
+      <li><a href="/concrete-lifting.html">Concrete lifting</a></li>
+            <li class="divider"></li>
+      <li><a href="/concrete-lifting.html">About Us</a></li>
+                 <li class="divider"></li>
+      <li><a href="/concrete-lifting.html">Service Area</a></li>
+      <li><a href="http://foundation.zurb.com/docs" class="button">Get A Free Quote</a></li>
+    </ul>
+  </section>
+</nav>
+</div>
  
  
  
@@ -296,15 +308,8 @@
 </div>
     
 
-  <a class="exit-off-canvas"></a>
+ 
 
-  </div>
-</div>
-
-
-
-<!-- FOR IE 8 to read media queries -->
-<script src="/core/js/responsive/respond.min.js"></script>
 
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script>
@@ -318,6 +323,7 @@
 <script src="/core/js/jquery.thScrollable.js" type="text/javascript"></script>
 
 <script src="/inc/foundation.min.js"></script>
+<script src="/inc/foundation.topbar.js"></script>
     <script>
       $(document).foundation();
     </script>

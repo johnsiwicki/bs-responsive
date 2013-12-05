@@ -82,6 +82,12 @@ background: white;
     color: white;
 }
 
+
+ .top-bar, .top-bar.expanded .title-area {
+ 
+background: #2980b9;
+ 
+}
  
 /* Nav styles - general */
 .navigation_sidebar_widget {
